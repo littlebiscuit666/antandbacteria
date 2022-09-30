@@ -79,7 +79,7 @@ for i=1:n
     xishu(i,:)=double(fliplr(coeffs(form_arr(i))));
 end
 cell_tube_p=xishu\right;
-% 成功了！！！！！！
+% 成功了
 % xishu*cell_tube_p,计算结果是对的
 
 

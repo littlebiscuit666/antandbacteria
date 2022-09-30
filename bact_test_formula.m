@@ -58,6 +58,7 @@ end
 fid = fopen('d:/1test/jr_form.txt', 'a');
 fprintf(fid, '%s\n', form_arr);
 fclose(fid);
+
 %% 通过form_arr获得方程组
 xishu=zeros(n);
 right=[1;zeros(n-2,1);-1];
@@ -65,5 +66,5 @@ for i=1:n
     xishu(i,:)=double(fliplr(coeffs(form_arr(i))));
 end
 cell_tube_p=xishu\right;
-% 成功了！！！！！！
+% 成功了
 % xishu*cell_tube_p,计算结果是对的
