@@ -71,7 +71,7 @@ set(gca,'xtick',1:cols+1,'ytick',1:rows+1);
 axis image;
 colormap(cmap);
 
-%% 形如D1的邻接矩阵
-%% 是Dijkstra算法的邻接矩阵：对角线为0，无法到达的是inf
-
+% 形如D1的邻接矩阵
+% 是Dijkstra算法的邻接矩阵：对角线为0，无法到达的是inf
+% 因为完全代表的是距离，距离与信息素成负相关
 
